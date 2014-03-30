@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140330 15:14:16.907" generator="Robot 2.8.4 (Python 2.7.3 on win32)">
+<suite source="D:\heroku_work\demo_jenkin_atdd\demo_jenkin_web.txt" id="s1" name="Demo Jenkin Web">
+<test id="s1-t1" name="Rule for Convert score to grade">
+<kw type="kw" name="Flow for convert score to grade">
+<doc></doc>
+<arguments>
+<arg>0</arg>
+<arg>F</arg>
+</arguments>
+<kw type="kw" name="Open browser to home page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20140330 15:14:17.668" level="INFO">Opening browser 'firefox' to base url 'http://mydemo-jenkins-web.herokuapp.com'</msg>
+<status status="PASS" endtime="20140330 15:14:50.168" starttime="20140330 15:14:17.668"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:14:50.324" starttime="20140330 15:14:50.169"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Demo Web :: Grade Converter</arg>
+</arguments>
+<msg timestamp="20140330 15:14:52.930" level="INFO">Page title is 'Demo Web :: Grade Converter'.</msg>
+<status status="PASS" endtime="20140330 15:14:52.930" starttime="20140330 15:14:50.324"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:14:52.931" starttime="20140330 15:14:17.667"></status>
+</kw>
+<kw type="kw" name="Fill in score">
+<doc></doc>
+<arguments>
+<arg>${score}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>${score}</arg>
+</arguments>
+<msg timestamp="20140330 15:14:52.933" level="INFO">Typing text '0' into text field 'score'</msg>
+<status status="PASS" endtime="20140330 15:14:56.879" starttime="20140330 15:14:52.933"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>convert</arg>
+</arguments>
+<msg timestamp="20140330 15:14:56.881" level="INFO">Clicking button 'convert'.</msg>
+<status status="PASS" endtime="20140330 15:14:57.702" starttime="20140330 15:14:56.880"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:14:57.703" starttime="20140330 15:14:52.931"></status>
+</kw>
+<kw type="kw" name="I should see result">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140330 15:14:59.867" starttime="20140330 15:14:57.704"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:15:00.067" starttime="20140330 15:14:59.868"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:15:00.068" starttime="20140330 15:14:57.703"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:15:00.068" starttime="20140330 15:14:17.665"></status>
+</kw>
+<kw type="kw" name="Flow for convert score to grade">
+<doc></doc>
+<arguments>
+<arg>40</arg>
+<arg>F</arg>
+</arguments>
+<kw type="kw" name="Open browser to home page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20140330 15:15:00.072" level="INFO">Opening browser 'firefox' to base url 'http://mydemo-jenkins-web.herokuapp.com'</msg>
+<status status="PASS" endtime="20140330 15:15:33.968" starttime="20140330 15:15:00.072"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:15:36.458" starttime="20140330 15:15:33.969"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Demo Web :: Grade Converter</arg>
+</arguments>
+<msg timestamp="20140330 15:15:36.513" level="INFO">Page title is 'Demo Web :: Grade Converter'.</msg>
+<status status="PASS" endtime="20140330 15:15:36.514" starttime="20140330 15:15:36.459"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:15:36.514" starttime="20140330 15:15:00.071"></status>
+</kw>
+<kw type="kw" name="Fill in score">
+<doc></doc>
+<arguments>
+<arg>${score}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>${score}</arg>
+</arguments>
+<msg timestamp="20140330 15:15:36.517" level="INFO">Typing text '40' into text field 'score'</msg>
+<status status="PASS" endtime="20140330 15:15:36.912" starttime="20140330 15:15:36.516"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>convert</arg>
+</arguments>
+<msg timestamp="20140330 15:15:36.914" level="INFO">Clicking button 'convert'.</msg>
+<status status="PASS" endtime="20140330 15:15:41.118" starttime="20140330 15:15:36.913"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:15:41.118" starttime="20140330 15:15:36.515"></status>
+</kw>
+<kw type="kw" name="I should see result">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140330 15:15:41.774" starttime="20140330 15:15:41.120"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:15:43.798" starttime="20140330 15:15:41.775"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:15:43.798" starttime="20140330 15:15:41.119"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:15:43.798" starttime="20140330 15:15:00.069"></status>
+</kw>
+<kw type="kw" name="Flow for convert score to grade">
+<doc></doc>
+<arguments>
+<arg>50</arg>
+<arg>D</arg>
+</arguments>
+<kw type="kw" name="Open browser to home page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20140330 15:15:43.803" level="INFO">Opening browser 'firefox' to base url 'http://mydemo-jenkins-web.herokuapp.com'</msg>
+<status status="PASS" endtime="20140330 15:16:28.376" starttime="20140330 15:15:43.802"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:16:28.943" starttime="20140330 15:16:28.377"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Demo Web :: Grade Converter</arg>
+</arguments>
+<msg timestamp="20140330 15:16:28.961" level="INFO">Page title is 'Demo Web :: Grade Converter'.</msg>
+<status status="PASS" endtime="20140330 15:16:28.961" starttime="20140330 15:16:28.943"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:16:28.961" starttime="20140330 15:15:43.801"></status>
+</kw>
+<kw type="kw" name="Fill in score">
+<doc></doc>
+<arguments>
+<arg>${score}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>${score}</arg>
+</arguments>
+<msg timestamp="20140330 15:16:28.963" level="INFO">Typing text '50' into text field 'score'</msg>
+<status status="PASS" endtime="20140330 15:16:29.313" starttime="20140330 15:16:28.963"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>convert</arg>
+</arguments>
+<msg timestamp="20140330 15:16:29.318" level="INFO">Clicking button 'convert'.</msg>
+<status status="PASS" endtime="20140330 15:16:31.408" starttime="20140330 15:16:29.314"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:16:31.409" starttime="20140330 15:16:28.962"></status>
+</kw>
+<kw type="kw" name="I should see result">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140330 15:16:31.828" starttime="20140330 15:16:31.411"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:16:32.189" starttime="20140330 15:16:31.829"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:16:32.191" starttime="20140330 15:16:31.409"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:16:32.191" starttime="20140330 15:15:43.800"></status>
+</kw>
+<kw type="kw" name="Flow for convert score to grade">
+<doc></doc>
+<arguments>
+<arg>60</arg>
+<arg>C</arg>
+</arguments>
+<kw type="kw" name="Open browser to home page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20140330 15:16:32.201" level="INFO">Opening browser 'firefox' to base url 'http://mydemo-jenkins-web.herokuapp.com'</msg>
+<status status="PASS" endtime="20140330 15:17:08.871" starttime="20140330 15:16:32.201"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:17:12.126" starttime="20140330 15:17:08.871"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Demo Web :: Grade Converter</arg>
+</arguments>
+<msg timestamp="20140330 15:17:12.189" level="INFO">Page title is 'Demo Web :: Grade Converter'.</msg>
+<status status="PASS" endtime="20140330 15:17:12.190" starttime="20140330 15:17:12.127"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:17:12.190" starttime="20140330 15:16:32.200"></status>
+</kw>
+<kw type="kw" name="Fill in score">
+<doc></doc>
+<arguments>
+<arg>${score}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>${score}</arg>
+</arguments>
+<msg timestamp="20140330 15:17:12.192" level="INFO">Typing text '60' into text field 'score'</msg>
+<status status="PASS" endtime="20140330 15:17:16.353" starttime="20140330 15:17:12.192"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>convert</arg>
+</arguments>
+<msg timestamp="20140330 15:17:16.355" level="INFO">Clicking button 'convert'.</msg>
+<status status="PASS" endtime="20140330 15:17:17.959" starttime="20140330 15:17:16.354"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:17:17.959" starttime="20140330 15:17:12.190"></status>
+</kw>
+<kw type="kw" name="I should see result">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140330 15:17:20.006" starttime="20140330 15:17:17.961"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:17:22.491" starttime="20140330 15:17:20.007"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:17:22.491" starttime="20140330 15:17:17.959"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:17:22.492" starttime="20140330 15:16:32.198"></status>
+</kw>
+<kw type="kw" name="Flow for convert score to grade">
+<doc></doc>
+<arguments>
+<arg>70</arg>
+<arg>B</arg>
+</arguments>
+<kw type="kw" name="Open browser to home page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20140330 15:17:22.495" level="INFO">Opening browser 'firefox' to base url 'http://mydemo-jenkins-web.herokuapp.com'</msg>
+<status status="PASS" endtime="20140330 15:18:04.578" starttime="20140330 15:17:22.495"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:18:04.853" starttime="20140330 15:18:04.579"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Demo Web :: Grade Converter</arg>
+</arguments>
+<msg timestamp="20140330 15:18:04.905" level="INFO">Page title is 'Demo Web :: Grade Converter'.</msg>
+<status status="PASS" endtime="20140330 15:18:04.905" starttime="20140330 15:18:04.853"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:18:04.905" starttime="20140330 15:17:22.494"></status>
+</kw>
+<kw type="kw" name="Fill in score">
+<doc></doc>
+<arguments>
+<arg>${score}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>${score}</arg>
+</arguments>
+<msg timestamp="20140330 15:18:04.907" level="INFO">Typing text '70' into text field 'score'</msg>
+<status status="PASS" endtime="20140330 15:18:07.683" starttime="20140330 15:18:04.907"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>convert</arg>
+</arguments>
+<msg timestamp="20140330 15:18:07.684" level="INFO">Clicking button 'convert'.</msg>
+<status status="PASS" endtime="20140330 15:18:08.985" starttime="20140330 15:18:07.684"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:18:08.985" starttime="20140330 15:18:04.906"></status>
+</kw>
+<kw type="kw" name="I should see result">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140330 15:18:09.349" starttime="20140330 15:18:08.987"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:18:09.877" starttime="20140330 15:18:09.350"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:18:09.877" starttime="20140330 15:18:08.986"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:18:09.878" starttime="20140330 15:17:22.492"></status>
+</kw>
+<kw type="kw" name="Flow for convert score to grade">
+<doc></doc>
+<arguments>
+<arg>80</arg>
+<arg>A</arg>
+</arguments>
+<kw type="kw" name="Open browser to home page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20140330 15:18:09.882" level="INFO">Opening browser 'firefox' to base url 'http://mydemo-jenkins-web.herokuapp.com'</msg>
+<status status="PASS" endtime="20140330 15:18:43.758" starttime="20140330 15:18:09.880"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:18:43.999" starttime="20140330 15:18:43.759"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Demo Web :: Grade Converter</arg>
+</arguments>
+<msg timestamp="20140330 15:18:44.070" level="INFO">Page title is 'Demo Web :: Grade Converter'.</msg>
+<status status="PASS" endtime="20140330 15:18:44.070" starttime="20140330 15:18:44.000"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:18:44.070" starttime="20140330 15:18:09.879"></status>
+</kw>
+<kw type="kw" name="Fill in score">
+<doc></doc>
+<arguments>
+<arg>${score}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>${score}</arg>
+</arguments>
+<msg timestamp="20140330 15:18:44.073" level="INFO">Typing text '80' into text field 'score'</msg>
+<status status="PASS" endtime="20140330 15:18:47.068" starttime="20140330 15:18:44.072"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>convert</arg>
+</arguments>
+<msg timestamp="20140330 15:18:47.069" level="INFO">Clicking button 'convert'.</msg>
+<status status="PASS" endtime="20140330 15:18:47.858" starttime="20140330 15:18:47.068"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:18:47.859" starttime="20140330 15:18:44.071"></status>
+</kw>
+<kw type="kw" name="I should see result">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140330 15:18:48.186" starttime="20140330 15:18:47.861"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:18:49.458" starttime="20140330 15:18:48.186"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:18:49.458" starttime="20140330 15:18:47.859"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:18:49.458" starttime="20140330 15:18:09.879"></status>
+</kw>
+<kw type="kw" name="Flow for convert score to grade">
+<doc></doc>
+<arguments>
+<arg>100</arg>
+<arg>A</arg>
+</arguments>
+<kw type="kw" name="Open browser to home page">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20140330 15:18:49.463" level="INFO">Opening browser 'firefox' to base url 'http://mydemo-jenkins-web.herokuapp.com'</msg>
+<status status="PASS" endtime="20140330 15:19:19.906" starttime="20140330 15:18:49.463"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:19:20.177" starttime="20140330 15:19:19.907"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Title Should Be">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Demo Web :: Grade Converter</arg>
+</arguments>
+<msg timestamp="20140330 15:19:20.208" level="INFO">Page title is 'Demo Web :: Grade Converter'.</msg>
+<status status="PASS" endtime="20140330 15:19:20.208" starttime="20140330 15:19:20.178"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:19:20.209" starttime="20140330 15:18:49.462"></status>
+</kw>
+<kw type="kw" name="Fill in score">
+<doc></doc>
+<arguments>
+<arg>${score}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>score</arg>
+<arg>${score}</arg>
+</arguments>
+<msg timestamp="20140330 15:19:20.212" level="INFO">Typing text '100' into text field 'score'</msg>
+<status status="PASS" endtime="20140330 15:19:20.710" starttime="20140330 15:19:20.212"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Button">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>convert</arg>
+</arguments>
+<msg timestamp="20140330 15:19:20.711" level="INFO">Clicking button 'convert'.</msg>
+<status status="PASS" endtime="20140330 15:19:22.585" starttime="20140330 15:19:20.710"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:19:22.585" starttime="20140330 15:19:20.210"></status>
+</kw>
+<kw type="kw" name="I should see result">
+<doc></doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<kw type="kw" name="Selenium2Library.Wait Until Page Contains">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${expected_result}</arg>
+</arguments>
+<status status="PASS" endtime="20140330 15:19:22.970" starttime="20140330 15:19:22.587"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140330 15:19:23.145" starttime="20140330 15:19:22.971"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:19:23.145" starttime="20140330 15:19:22.585"></status>
+</kw>
+<status status="PASS" endtime="20140330 15:19:23.145" starttime="20140330 15:18:49.460"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140330 15:19:23.175" critical="yes" starttime="20140330 15:14:17.663"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140330 15:19:23.218" starttime="20140330 15:14:16.908"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Demo Jenkin Web">Demo Jenkin Web</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
